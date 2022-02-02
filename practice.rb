@@ -33,7 +33,6 @@ brians_balance = 0
 evans_balance = 0
 anthonys_balance = 0
 
-
 if blockchain[:from_user] == "ben"
   bens_balance = bens_balance - blockchain[:amount]
 elsif blockchain[:from_user] == "brian"
@@ -53,7 +52,6 @@ elsif blockchain[:to_user] == "evan"
 elsif blockchain[:to_user] == "anthony"
   anthonys_balance = anthonys_balance + blockchain[:amount]
 end
-
 
 
 puts "Ben's KelloggCoin balance is #{bens_balance}"
